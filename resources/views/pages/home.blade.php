@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite('resources/js/app.js')
 
-</head>
-<body>
-    {{-- !IMPORTO IL LAYOUT PRINCIPALE --}}
-    @extends("layout.app")
-    <header>
-        {{-- ! INCLUDO I PARTIALS I CUI @SECTIONS VANNO A SOSTITUIRSI AGLI @YIELD NEL LAYOUT PRINCIPALE --}}
-        @include("partials.header")
-    </header>
+@extends("layout.app")
 
-    <main>
-        {{-- ! INCLUDO I PARTIALS I CUI @SECTIONS VANNO A SOSTITUIRSI AGLI @YIELD NEL LAYOUT PRINCIPALE --}}
-        @include("partials.main")
-    </main>
+@section("header-content")
+    @include("partials.header")
+@endsection
 
-    <footer>
-        {{-- ! INCLUDO I PARTIALS I CUI @SECTIONS VANNO A SOSTITUIRSI AGLI @YIELD NEL LAYOUT PRINCIPALE --}}
-        @include("partials.footer")
-    </footer>
-</body>
-</html>
+@section("jumbotron-container")
+    @include("partials.jumbotron")
+@endsection
+
+@section("main-content")
+    @include("partials.main")
+@endsection
+
+@section("footer-content")
+    @include("partials.footer")
+@endsection
+

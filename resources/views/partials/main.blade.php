@@ -1,5 +1,3 @@
-
-
-@section("main-content")
-    <h1>ciao sono il main partials</h1>
-@endsection
+<main>
+<h1>ciao</h1>
+</main>
