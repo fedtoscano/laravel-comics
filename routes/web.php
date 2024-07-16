@@ -216,11 +216,11 @@ Route::get('/', function () {
 
     return view('pages.home',
     compact("navbarLinks", "comics", "dcComicsUlEls", "shopUlEls", "dcUlEls", "sitesUlEls"));
-});
+})->name('home');
 
 
 //? ROUTE PAGINA PRODUCTS
-Route::get('/products', function () {
+Route::get('/comics', function () {
     $navbarLinks = [
         [
             'id' => 1,
@@ -425,4 +425,4 @@ Route::get('/products', function () {
     return view('pages.products',
     compact("comics", "navbarLinks", "dcComicsUlEls",
 "shopUlEls", "dcUlEls", "sitesUlEls"));
-});
+})->name('comics');;

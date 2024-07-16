@@ -16,6 +16,11 @@ header{
         display: flex;
         gap: 2em;
 
+        & li.active{
+            background-color: azure;
+            border-bottom: 3px solid blue;
+        }
+
         & li a{
             text-decoration: none;
             color: black;
