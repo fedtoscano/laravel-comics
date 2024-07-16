@@ -1,19 +1,14 @@
 
 @extends("layout.app")
 
-@section("header-content")
-    @include("partials.header")
+
+@section("jumbotron")
+<div id="jumbotron">
+    @include("partials.jumbotron")
+</div>
 @endsection
 
-@section("jumbotron-container")
-    @include("partials.jumbotron")
-@endsection
 
 @section("main-content")
-    @include("partials.main")
+    <h1>MAIN CONTENT GOES HERE</h1>
 @endsection
-
-@section("footer-content")
-    @include("partials.footer")
-@endsection
-

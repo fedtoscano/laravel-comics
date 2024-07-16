@@ -10,20 +10,14 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <header>
-        @yield("header-content")
-    </header>
+        @include("partials.header")
 
-    <div id="jumbotron">
-        @yield("jumbotron-container")
-    </div>
+        @yield("jumbotron")
 
     <main>
         @yield("main-content")
     </main>
 
-    <footer>
-        @yield("footer-content")
-    </footer>
+        @include("partials.footer")
 </body>
 </html>

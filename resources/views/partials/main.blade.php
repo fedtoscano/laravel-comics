@@ -1,13 +1,3 @@
 <main>
-    <section>
-        <ul id="card-list">
-            @foreach ($comics as $comic)
-            <article class="single-card">
-                    <img src="{{ $comic["thumb"]}}" alt="">
-                    <span> {{ $comic["title"] }}</span>
-            </article>
-            @endforeach
-        </ul>
-    </section>
+        <h1>MAIN CONTENT GOES HERE</h1>
 </main>
-
