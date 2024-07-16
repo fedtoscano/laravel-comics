@@ -1,0 +1,24 @@
+header{
+    color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+
+    .logo-container{
+        width: 80px;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        gap: 2em;
+
+        & li a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

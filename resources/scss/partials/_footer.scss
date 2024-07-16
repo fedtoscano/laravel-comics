@@ -1,0 +1,86 @@
+footer{
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    height: 600px;
+    background-size: cover;
+    background-image: url(../img/footer-bg.jpg);
+    ul{
+        width: 30%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        flex-wrap: wrap;
+        margin-bottom: 1.8em;
+
+        a{
+            text-decoration: none;
+            color:#828282 ;
+        }
+            & li:first-of-type{
+            text-transform: uppercase;
+            font-weight: 600;
+            }
+    }
+
+    .footer-top{
+        padding: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-bottom{
+        padding: 3em;
+        background-color: rgb(48, 48, 48);
+        display: flex;
+        justify-content: space-between;
+        button{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            padding: 1em;
+            border: 1px solid #0282fa;
+            background-color: rgb(48, 48, 48);
+        }
+            .follow-us{
+                display: flex;
+                justify-content: space-around;
+                gap: 2em;
+                color: blue;
+                font-size: 1.5em;
+
+                    span{
+                        color: #0282fa;
+                    }
+            }
+
+            .socials-container img{
+                margin-left: 1em;
+            }
+    }
+
+    .navbar-container{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
+        height: 400px;
+        font-size: .8em;
+    }
+
+    .dc-logo-container{
+        width: 400px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h2{
+        margin-bottom: .8em;
+        font-weight: 800;
+    }
+}

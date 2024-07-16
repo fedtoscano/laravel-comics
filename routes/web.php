@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//? ROUTE PAGINA HOME
 Route::get('/', function () {
     $navbarLinks = [
         [
@@ -218,6 +218,8 @@ Route::get('/', function () {
     compact("navbarLinks", "comics", "dcComicsUlEls", "shopUlEls", "dcUlEls", "sitesUlEls"));
 });
 
+
+//? ROUTE PAGINA PRODUCTS
 Route::get('/products', function () {
     $navbarLinks = [
         [
